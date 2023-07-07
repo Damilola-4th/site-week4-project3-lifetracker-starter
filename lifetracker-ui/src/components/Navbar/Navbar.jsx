@@ -30,9 +30,9 @@ const Navbar = ({setNutrional, setSleepLogs, setExcerciseLogs, Login, handleSign
             <button className='login-state'>
             <Link  to={"/login"}>Log in</Link>
             </button>: 
-            <button className='login-state' onClick = { () => handleSignOutUser() }>
-              Signout
-              </button>
+            <button className='login-state-signout' onClick = { () => handleSignOutUser() }>
+            Signout
+            </button>
 }
             {(!Login)?
             <button className='login-state'>

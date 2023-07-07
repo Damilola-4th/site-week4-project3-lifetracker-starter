@@ -1,72 +1,57 @@
-
 .navbar a {
   /* color: #47A992; */
-  color: #3AA6B9; 
+  color: #3AA6B9;
   font-weight: 500;
   text-decoration: none;
-} 
-
+}
 .links {
   list-style: none;
   color: white;
+  justify-content: left;
 }
-
 .navbar a:hover {
-  color: black; 
-} 
-
+  color: black;
+}
 .links li{
   display: inline-block;
-  padding: 0px 30px; 
-
+  padding: 0px 20px;
 }
-
 .navbar {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 10%; 
-  margin-top: none; 
+  padding: 30px 1%;
+  margin-top: none;
   /* margin-bottom:1%;  */
   background-color: white;
 }
-
-
-
 ul li{
   font-family: "Avenir", sans-serif;
   font-size: 25px;
-  color: black; 
+  color: black;
   font-weight: bold;
 }
-
 .logo {
   position: absolute;
   left: 10%;
   margin-top: 10px;
-  margin-left: 50px; 
+  margin-left: 50px;
   margin-bottom:2%;
 }
-
-.login-state{
+.login-state {
   display: inline-block;
-}
-
-.login-state button{
-  background-color: white; 
+  background-color: white;
   font-size: 23px;
   font-family: "Avenir", sans-serif;
   border: 1px solid #3AA6B9;
   border-radius: 4px;
   margin-left: 20px;
-  padding: 7px 15px; 
+  padding: 7px 15px;
 }
-
 .login-state button:hover{
   background-color: #3AA6B9;
-  color: white; 
-} 
-
+  color: white;
+}
 /* li .login-state{
   border: 1px; 
 } */

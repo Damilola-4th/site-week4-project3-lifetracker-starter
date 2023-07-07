@@ -12,7 +12,7 @@ const NutritionPage = ({ GetUserNutritionLogs , setNutritionLogs, NutritionLogs 
   }
   console.log(NutritionLogs)
   return (
-    <div>
+    <div className='Nutrition-Container'>
     <div className='header-wrap-nutri'>
       <h1 className='header'>Nutrition</h1>
     </div>

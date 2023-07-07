@@ -18,7 +18,7 @@ const SleepPage = ({ SleepLogs, setSleepLogs, Login, GetSleepingData }) => {
   console.log('SleepLogs is:', SleepLogs)
 
   return (
-    <div>
+    <div className='Sleep-Container'>
     <div className='header-wrap-sleep'>
       <h1 className='header'>Sleep</h1>
     </div>

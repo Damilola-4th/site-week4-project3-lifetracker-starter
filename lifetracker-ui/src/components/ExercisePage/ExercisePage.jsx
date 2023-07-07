@@ -12,7 +12,7 @@ const ExercisePage = ( {ExerciseLogs, setExcerciseLogs, Login, GetUserExcercises
     }
   console.log('ExcerciseLogs is:', ExerciseLogs)
   return (
-  <div>
+  <div  className='Excercise-container'>
   <div className='header-wrap-ex'>
       <h1 className='header'>Exercise</h1>
   </div>

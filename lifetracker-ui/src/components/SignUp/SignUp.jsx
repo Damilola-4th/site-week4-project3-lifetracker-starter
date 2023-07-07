@@ -71,7 +71,7 @@ const SignUp = (props) => {
       <button type="submit">Create Account</button>
       </form>
       <p className='prompt'>Already have an account?    
-      <Link to={"/login"}>Log In</Link>
+      <Link className  to={"/login"} style={{ fontSize: "30px", color: "white" }} >Log In</Link>
       </p>
     </div>
     </div>

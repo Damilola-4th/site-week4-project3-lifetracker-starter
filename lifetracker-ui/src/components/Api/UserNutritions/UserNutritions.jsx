@@ -7,7 +7,7 @@ const UserNutritions = ({UserID}) => {
     const GetUserNutritionLogs = async (setNutritionLogs ) => {
         try {
             console.log('UserID', UserID)
-            const response = await axios.get(`https://lifetracker-bk1k.onrender.com/usernutritiondata/${UserID}`);
+            const response = await axios.get(`https://lifetracker-bk1k.onrender.com/nutrition/usernutritiondata/${UserID}`);
             // console.log(response.data.rows)
             console.log(response.status)
             setNutritionLogs(response.data)

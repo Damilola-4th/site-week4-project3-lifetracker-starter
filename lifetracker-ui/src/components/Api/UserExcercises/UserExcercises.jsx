@@ -5,7 +5,7 @@ const UserExcercises = ({UserID}) => {
     const [ExerciseLogs, setExcerciseLogs] = useState([])
     const GetUserExcercises = async () => {
         try {
-            const response = await axios.get(`https://lifetracker-bk1k.onrender.com/useexercisedata/${UserID}`);
+            const response = await axios.get(`https://lifetracker-bk1k.onrender.com/exercise/useexercisedata/${UserID}`);
             console.log(response.data)
             setExcerciseLogs(response.data)
         } catch (error) {

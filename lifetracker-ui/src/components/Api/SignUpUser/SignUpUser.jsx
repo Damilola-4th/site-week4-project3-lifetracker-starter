@@ -14,7 +14,7 @@ const SignUpUser = (SignUpInfo) => {
     const PostSignUpInfo = async (SignUpInfo) => {
         console.log('PostSignUpInfo was called', SignUpInfo)
         try {
-            const response = await axios.post("http://localhost:3001/auth/register", { 'firstname': firstname, 'lastname': lastname ,'email':email, 'username': username, 'password': password})
+            const response = await axios.post("https://lifetracker-bk1k.onrender.com/auth/register", { 'firstname': firstname, 'lastname': lastname ,'email':email, 'username': username, 'password': password})
             console.log(response.data)
             if(response.status === 200) {
               const token = response.data.token

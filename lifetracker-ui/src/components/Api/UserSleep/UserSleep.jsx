@@ -15,7 +15,7 @@ const UserSleep = ({UserID}) => {
     const PostSleepingData = async (SleepingLog) => {
         try {
             console.log("Sleeping Log is:",SleepingLog ,'UserID is:', UserID)
-            const response = await axios.post("http://localhost:3001/sleep/sleepingData", { 'start_time' :SleepingLog.starttime, 'end_time': SleepingLog.endtime, 'UserID': UserID } );
+            const response = await axios.post("https://lifetracker-bk1k.onrender.com/sleep/sleepingData", { 'start_time' :SleepingLog.starttime, 'end_time': SleepingLog.endtime, 'UserID': UserID } );
             console.log(response.data)
             // SetLogInUserInfo(true)
         } catch (error) {

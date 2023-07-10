@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import "./ActivityPage.css"
 import {Link} from 'react-router-dom'
 

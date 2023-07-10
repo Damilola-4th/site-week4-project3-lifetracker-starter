@@ -53,25 +53,7 @@ function App() {
     checkLoggedIn();
   }, []);
   
-  if (Login){
-    useEffect( () => { GetUserExcercises( setExcerciseLogs),
-                       GetSleepingData( setSleepLogs),
-                        GetUserNutritionLogs( setNutritionLogs )},
-                        [])
 
-    }
-
-  // i have handle login here
-  // at the end of its job you should setLogin(true)
-  //if you have handle logout
-  // setLogin(false) and clear the local storage
-
-  if (Login) {
-    // useEffect(() => {GetSleepingData() }, [])
-    // useEffect( () => { GetUserNutritionLogs( setNutritionLogs ) }, [])
-    // console.log("Hi I am in")
-    // useEffect(() => {GetUserExcercises() }, [])
-  }
 
   return (
     <div className='App'>
@@ -79,7 +61,13 @@ function App() {
         <Navbar setSleepLogs = {setSleepLogs} setExcerciseLogs = { setExcerciseLogs } Login = {Login} handleSignOutUser = {handleSignOutUser} />
         <Routes>
           <Route path="/" element={<Home  Login = {Login} />} />
-          <Route path="/activity" element=  {<ActivityPage  ExerciseLogs = {ExerciseLogs} NutritionLogs = {NutritionLogs} SleepLogs=  {SleepLogs}/>} />
+          <Route path="/activity" element=  {<ActivityPage  ExerciseLogs = {ExerciseLogs} NutritionLogs = {NutritionLogs} SleepLogs=  {SleepLogs}
+          GetSleepingData = { GetSleepingData }
+          GetUserExcercises = { GetUserExcercises }
+          GetUserNutritionLogs = { GetUserNutritionLogs }
+          setExcerciseLogs = { setExcerciseLogs }
+          setNutritionLogs = { setNutritionLogs }
+          setSleepLogs  = { setSleepLogs }  />} />
           <Route path="/nutrition" element={<NutritionPage PostUserNutritionLogs = { PostUserNutritionLogs } NutritionLogs = {NutritionLogs} GetUserNutritionLogs = { GetUserNutritionLogs } setNutritionLogs = {setNutritionLogs} Login = {Login} />} />
           <Route path='/exercise' element ={<ExercisePage ExerciseLogs = {ExerciseLogs} setExcerciseLogs = {setExcerciseLogs} PostUserExcercises = { PostUserExcercises } GetUserExcercises = { GetUserExcercises } Login = {Login} UserID = { UserID } />} />
           <Route path='/sleep' element = {<SleepPage SleepLogs=  {SleepLogs} setSleepLogs = { setSleepLogs} PostSleepingData =  { PostSleepingData } GetSleepingData = { GetSleepingData }  Login = {Login}  UserID  = { UserID }/>} />

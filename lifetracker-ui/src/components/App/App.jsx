@@ -53,6 +53,14 @@ function App() {
     checkLoggedIn();
   }, []);
   
+  if (Login){
+    useEffect( () => { GetUserExcercises( setExcerciseLogs),
+                       GetSleepingData( setSleepLogs),
+                        GetUserNutritionLogs( setNutritionLogs )},
+                        [])
+
+    }
+
   // i have handle login here
   // at the end of its job you should setLogin(true)
   //if you have handle logout

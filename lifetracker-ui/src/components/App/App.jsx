@@ -76,7 +76,7 @@ function App() {
           <Route path='/exercise' element ={<ExercisePage ExerciseLogs = {ExerciseLogs} setExcerciseLogs = {setExcerciseLogs} PostUserExcercises = { PostUserExcercises } GetUserExcercises = { GetUserExcercises } Login = {Login} UserID = { UserID } />} />
           <Route path='/sleep' element = {<SleepPage SleepLogs=  {SleepLogs} setSleepLogs = { setSleepLogs} PostSleepingData =  { PostSleepingData } GetSleepingData = { GetSleepingData }  Login = {Login}  UserID  = { UserID }/>} />
           <Route path = '/login' element= {<LogIn Login={Login} setLogin = { setLogin } UserID = { UserID } setUserID = { setUserID } />}  />
-          <Route path = '/signUp' element = {< SignUp   />} />
+          <Route path = '/signUp' element = {< SignUp  LogIn = { LogIn } setLogin = {setLogin} UserID = { UserID } setUserID = {setUserID} />} />
           <Route path = '/sleep/create' element = {< SleepPageCreate PostSleepingData = {PostSleepingData} />} />
           <Route path = '/nutrition/create' element = {< NutritionPageCreate PostUserNutritionLogs = { PostUserNutritionLogs }  />} />
           <Route path = '/exercise/create' element = {< ExercisePageCreate PostUserExcercises = {PostUserExcercises } />} /> 

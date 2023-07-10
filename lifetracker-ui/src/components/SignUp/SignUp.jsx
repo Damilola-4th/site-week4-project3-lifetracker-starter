@@ -4,9 +4,9 @@ import "./SignUp.css"
 import {Link} from 'react-router-dom'
 import SignUpUser from '../Api/SignUpUser/SignUpUser'
 import SignUpEventFunctions from './SignUpEventFunctions'
-const SignUp = (props) => {
+const SignUp = ({setUserID, setLogin, UserID , Login}) => {
   const [signUpInfo, setSignUpInfo]  = useState({'firstname': null , 'lastname': null , 'username': null, 'email': null, 'password':null })
-  const {PostSignUpInfo} = SignUpUser(signUpInfo)
+  const {PostSignUpInfo} = SignUpUser(signUpInfo, setLogin, setUserID)
   
   // const updateUserName = (event )=>{
   //   event.preventDefault()

@@ -2,7 +2,7 @@ import React from 'react'
 import "./ActivityPage.css"
 import {Link} from 'react-router-dom'
 
-const ActivityPage = ({ExerciseLogs, NutritionLogs, SleepLogs, GetUserNutritionLogs, GetSleepingData,GetUserExcercises, setExcerciseLogs, setNutritionLogs, setSleepLogs }) => {
+const ActivityPage = ({Login, ExerciseLogs, NutritionLogs, SleepLogs, GetUserNutritionLogs, GetSleepingData,GetUserExcercises, setExcerciseLogs, setNutritionLogs, setSleepLogs }) => {
 
   if(Login){
     useEffect( () => { GetUserExcercises( setExcerciseLogs)
